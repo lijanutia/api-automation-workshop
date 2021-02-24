@@ -1,0 +1,29 @@
+{
+  "name": "api-automation-workshop",
+  "version": "1.0.0",
+  "description": "api test solution sourcebooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lijanutia/api-automation-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lijanutia/api-automation-workshop/issues"
+  },
+  "homepage": "https://github.com/lijanutia/api-automation-workshop#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.0",
+    "chai-http": "^4.3.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "dotenv-flow": "^3.2.0",
+    "esm": "^3.2.25",
+    "mocha": "^8.3.0"
+  }
+}
