@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Tagged",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "env": { "NODE_ENV": "vln"},
+            "args": [
+                "--grep",
+                "@debug",
+                "-r",
+                "esm",
+                "--file",
+                "utils/authAndDefaults.js",
+                "--timeout",
+                "55000",
+                "--colors",
+                "${workspaceFolder}/tests/*.spec.js",
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "protocol": "inspector"
+        }
+    ]
+  }

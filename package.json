@@ -4,7 +4,8 @@
   "description": "api test solution sourcebooks",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-vln": "cross-env NODE_ENV=vln mocha -r esm --file utils/authAndDefaults.js --timeout 8000 tests/*.spec.js",
+    "test-kns": "cross-env NODE_ENV=kns mocha -r esm --file utils/authAndDefaults.js --timeout 8000 tests/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,11 @@
     "dotenv": "^8.2.0",
     "dotenv-flow": "^3.2.0",
     "esm": "^3.2.25",
-    "mocha": "^8.3.0"
+    "mocha": "^8.3.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "tedious": "^11.0.4"
   }
 }
